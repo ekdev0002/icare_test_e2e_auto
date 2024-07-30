@@ -1,0 +1,6 @@
+selenium
+robotframework
+robotframework-faker
+robotframework-seleniumlibrary
+robotframework-metrics
+webdriver-manager
