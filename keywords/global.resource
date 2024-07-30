@@ -8,7 +8,7 @@ Library    String
 Connexion
     [Arguments]                                 ${PLATEFORM}                               ${USERNAME}                ${HICODE}                ${MDP}    
     IF    "${PLATEFORM}" == "ICARE"
-        Open Browser                            https://icare-nestlabs-test.net:8090            googlechrome                                   options=add_argument('--window-size=1280,1024'); add_argument("--headless"); add_argument('--no-sandbox');     # options=add_argument("--start-maximized");  add_argument('--disable-dev-shm-usage') 
+        Open Browser                            https://icare-nestlabs-test.net:8090            googlechrome                                   options=add_argument('--window-size=1920,1080'); add_argument("--headless"); add_argument('--no-sandbox');     # options=add_argument("--start-maximized");  add_argument('--disable-dev-shm-usage') 
         Saisir Text Dans Element                ${CHAMP_USERNAME_XPATH}                    ${USERNAME}
         Saisir Text Dans Element                ${CHAMP_HICODE_XPATH}                      ${HICODE}
         Saisir Text Dans Element                ${CHAMP_MDP_XPATH}                   ${MDP}
