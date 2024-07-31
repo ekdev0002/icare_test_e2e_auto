@@ -71,7 +71,7 @@ pipeline {
     always {
 
       archiveArtifacts artifacts: '*.html, *.xml, *.png', fingerprint: true
-       emailext to: "yabyourekabore@gmail.com",
+       emailext to: "yabyourekabore@gmail.com sanourarouna90@gmail.com",
        subject: "[ICARE][Test AUTO][${currentBuild.result}] Build #${BUILD_NUMBER}" +
        '(${ROBOT_PASSED}/${ROBOT_TOTAL} ok)',
        body:    '<!DOCTYPE html><html><head><style>table,th,td{border: 1px solid black; border-collapse: collapse; width:300px} td{text-align:center; width:20%}</style></head><body>'+
