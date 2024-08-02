@@ -33,4 +33,6 @@ Remplir Formulaire Patient
     Press Keys                                          ${CHAMP_PAYS_PATIENT_XPATH}              ENTER                       
     Saisir Text Dans Element                            ${CHAMP_NATIONALITY_PATIENT_XPATH}       SENEGALAIS(E)                 
     Press Keys                                          ${CHAMP_NATIONALITY_PATIENT_XPATH}       ENTER
-    Cliquer Sur Element                                 ${BOUTON_ENREGISTRER_PATIENT_XPATH}     
+    Cliquer Sur Element                                 ${BOUTON_ENREGISTRER_PATIENT_XPATH}  
+    Sleep                                               10s
+    Capture Page Screenshot   
